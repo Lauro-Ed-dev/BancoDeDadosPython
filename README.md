@@ -58,9 +58,3 @@ O banco de dados será criado localmente como `app.db` no mesmo diretório.
 - O script usa SQLite para simplificar a execução local sem necessidade de servidor de banco.
 - Exemplo de seed inserido via opção do menu (10) — não sobrescreve dados existentes.
 - Ao deletar um cliente, os pedidos associados não são automaticamente tratados no menu (o FK foi definido com ON DELETE CASCADE, mas o comportamento depende da versão do SQLite ativar foreign key enforcement; se necessário, habilite PRAGMA foreign_keys=ON).
-
-## Melhorias possíveis
-- Validação mais robusta de campos (emails, telefones).
-- Interface web ou API REST.
-- Export/Import CSV.
-- Testes automatizados.
